@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let pass = "";
+        // while(pass!=="12345"){
+        //     pass=prompt("Enter the pass");
+        // }
+        // console.log("access granted");
+
+        // let countdown = 10;
+        // while(countdown>0){
+        //     console.log("Time remaning"+countdown);
+        //     countdown--;
+        // }
+        // console.log("Time's up!");
+
+
+
+        // let number = 5;
+        // let fact = 1;
+        // let i=1;
+
+        // while(i<=number){
+        //     fact=fact*i;
+        //     i++;
+        // }
+        // console.log("fact of num 5 is:"+fact);
+
+    
+        let number = 12345;
+        let originalnumber=number;
+        let firstdigit;
+        let lastdigit=number%10;
+        while(number>=10){
+            number=(number-number%10)/10;
+        }
+        firstdigit=number;
+
+        let sum = firstdigit+lastdigit;
+
+        console.log("originalnumber:"+originalnumber);
+        console.log("First Digit:"+firstdigit);
+        console.log("last digit"+lastdigit);
+        console.log("sum of first and last digit:"+sum);
+
+    </script>
+</body>
+</html>
